@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memojar Admin Management</title>
+  <title>Memojar - Reset Password</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,46 +11,28 @@
   <!-- Header -->
   <header>
     <div class="header-content">
-      <h1>Memojar Management</h1>
+      <h1>Reset Your Password</h1>
     </div>
   </header>
 
   <!-- Main Content -->
   <main>
-    <div class="login-container">
-      <div class="login-box">
-        <h2>Admin Login</h2>
-        
-        <!-- Gmail Login Button -->
-        <button id="gmail-login" class="login-btn">Login with Gmail</button>
+    <div class="reset-password-container">
+      <div class="reset-password-box">
+        <h2>Enter Your Email</h2>
 
-        <!-- Or divider -->
-        <div class="divider">OR</div>
-
-        <!-- Email and Password Form -->
-        <form id="login-form">
+        <form id="reset-form">
           <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required />
+            <label for="email">Email Address</label>
+            <input type="email" id="reset-email" placeholder="Enter your registered email" required />
           </div>
 
-          <div class="input-group">
-            <label for="password">Password</label>
-            <div class="password-wrapper">
-              <input type="password" id="password" placeholder="Enter your password" required />
-              <button type="button" id="toggle-password" class="toggle-password">
-                <span id="eye-icon">👁️</span>
-              </button>
-            </div>
-          </div>
-
-          <button type="submit" class="submit-btn">Login</button>
-
-          <!-- Forgot Password Link -->
-          <div class="forgot-password">
-            <a href="#">Forgot Password?</a>
-          </div>
+          <button type="submit" class="submit-btn">Send Reset Link</button>
         </form>
+
+        <div class="back-to-login">
+          <a href="index.html">Back to Login</a>
+        </div>
       </div>
     </div>
   </main>
