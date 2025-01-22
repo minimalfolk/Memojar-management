@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit User - Memojar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Edit User</h1>
+    <a href="admin-dashboard.html">Back to Dashboard</a>
+  </header>
+
+  <main>
+    <form id="edit-user-form">
+      <label for="user-name">Name:</label>
+      <input type="text" id="user-name" name="user-name" required>
+
+      <label for="user-username">Username:</label>
+      <input type="text" id="user-username" name="user-username" required>
+
+      <label for="user-role">Role:</label>
+      <select id="user-role" name="user-role">
+        <option value="admin">Admin</option>
+        <option value="verified">Verified</option>
+      </select>
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </main>
+
+  <footer>
+    <div>©2025 Memojar</div>
+  </footer>
+
+  <script src="edit-user.js"></script>
+</body>
+</html>
